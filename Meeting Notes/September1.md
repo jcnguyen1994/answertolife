@@ -4,7 +4,7 @@
 * Re-read M1 requirements and Github
 * Submit M1 to T-Square
 * Discuss requirements for M2
-*
+**
 **Meeting Notes**
 * Submitted M1 to T-Square
 * Pull before you push
