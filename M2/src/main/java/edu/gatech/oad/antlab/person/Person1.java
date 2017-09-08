@@ -33,7 +33,7 @@ public class Person1 {
 		//Person 1 put your implementation here
 		int i = 2 % input.length();
 		return input.substring(i, input.length()) + input.substring(0, i);
-	}		  	}
+	}
 	
 	/**
 	 * Return a string rep of this object
