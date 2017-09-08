@@ -30,7 +30,6 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		// make new string
 		String newName = "";
 		for (int i = 0; i < name.length(); i++) {
 			newName[(i + 5) % name.length()] = name[i];
