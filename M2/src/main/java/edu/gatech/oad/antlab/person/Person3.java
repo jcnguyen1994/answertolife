@@ -3,7 +3,7 @@ package edu.gatech.oad.antlab.person;
  *  A simple class for person 3
  *  returns their name and a
  *  reversed string 
- *  
+ *  mkdir /opt/gradle
  *  @author  Bob
  *  @version 1.1
  */
@@ -43,6 +43,10 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		String fin = "";
+		for (int i = input.length()-1; i >= 0; i++) {
+			fin = fin + input.charAt(i);
+		}
+	  return fin;
 	}
 }
