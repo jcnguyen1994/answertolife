@@ -3,7 +3,7 @@ package edu.gatech.oad.antlab.person;
  *  A simple class for person 3
  *  returns their name and a
  *  reversed string 
- *  
+ *  mkdir /opt/gradle
  *  @author  Bob
  *  @version 1.1
  */
