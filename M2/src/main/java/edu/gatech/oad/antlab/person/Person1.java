@@ -30,10 +30,10 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
+		//Person 1 put your implementation here
 		int i = 2 % input.length();
 		return input.substring(i, input.length()) + input.substring(0, i);
-	}
+	}		  	}
 	
 	/**
 	 * Return a string rep of this object
