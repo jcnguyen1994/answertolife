@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Squirmin' Vermin</title>
+	<script src = "dialog-polyfill.js"></script>
+  <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="https://www.clker.com/cliparts/2/V/n/c/z/2/mouse-with-cheese-md.png">
+</head>
+<body background = "image.jpg">
+	<!--//background : https://media.timeout.com/images/103444978/image.jpg -->
+			<dialog id="loginDialog">
+						Login
+						<form id="loginForm" method="dialog">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<p id ="loginError"></p>
+								<input class="mdl-textfield__input" type="text" id="loginEmail">
+								<label class="mdl-textfield__label" for="loginEmail">Email:</label>
+							</div>
+							<br>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="password" id="loginPassword">
+								<label class="mdl-textfield__label" for="loginPassword">Password:</label>
+							</div>
+							<br>
+							<!-- Accent-colored raised button with ripple -->
+						<button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+						  Login
+						</button>
+						<!-- MDL Spinner Component with Single Color -->
+						<div id="loginProgress" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+
+						</form>
+			</dialog>
+			<script src="dialog-polyfill.js"></script>
+			<script>
+				var dialog = document.querySelector('dialog');
+				dialogPolyfill.registerDialog(dialog);
+				// Now dialog acts like a native <dialog>.
+				dialog.showModal();
+			</script>
+		  <div class="login-cover">
+			    <!-- MDL Spinner Component -->
+			    <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+		  </div>
+		  <div class="mdl-layout mdl-js-layout">
+	  	<header class="mdl-layout__header">
+		    <div class="mdl-layout-icon"></div>
+		    <div class="mdl-layout__header-row">
+		      <span class="mdl-layout__title">Squirmin' Vermin</span>
+		      <span class="page-title-span"> | </span>
+		       <span class="page-title-span"> Home </span>
+		      <div class="mdl-layout-spacer"></div>
+		      <nav class="mdl-navigation">
+		      <button id = "logoutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+				  Logout	<i class="button-right-icon material-icons">account_circle</i>
+				</button>
+		      </nav>
+	    </div>
+	  	</header>
+			<!-- This is the Navigation Bar -->
+  <div class="mdl-layout__drawer">
+	<button id="goHome" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+	Home
+	</button>
+	<br>
+	<button id="goReport" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Report
+	</button>
+	<br>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  View Sightings on Map
+	</button>
+	<br>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  View Sightings Data
+	</button>
+	</div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAxawGF_89JQNocS8FMTysYRjj9XyJlHoQ",
+    authDomain: "rattrackingapp.firebaseapp.com",
+    databaseURL: "https://rattrackingapp.firebaseio.com",
+    projectId: "rattrackingapp",
+    storageBucket: "rattrackingapp.appspot.com",
+    messagingSenderId: "953060175016"
+  };
+  firebase.initializeApp(config);
+
+
+
+</script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="attempt.js"> </script>
+
+
+</body>
+</html>

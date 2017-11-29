@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Squirmin' Vermin</title>
+	<script src = "dialog-polyfill.js"></script>
+  <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="https://www.clker.com/cliparts/2/V/n/c/z/2/mouse-with-cheese-md.png">
+</head>
+<body>
+	<!--//background : https://media.timeout.com/images/103444978/image.jpg -->
+						<script>
+				var dialog = document.querySelector('dialog');
+				dialogPolyfill.registerDialog(dialog);
+				// Now dialog acts like a native <dialog>.
+				dialog.showModal();
+			</script>
+		  <div class="login-cover">
+			    <!-- MDL Spinner Component -->
+			    <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+		  </div>
+		  <div class="mdl-layout mdl-js-layout">
+	  	<header class="mdl-layout__header">
+		    <div class="mdl-layout-icon">
+
+				</div>
+		    <div class="mdl-layout__header-row">
+		      <span class="mdl-layout__title">Squirmin' Vermin</span>
+		      <span class="page-title-span"> | </span>
+		       <span class="page-title-span"> Report </span>
+		      <div class="mdl-layout-spacer"></div>
+
+					<nav class="mdl-navigation">
+		      <button id = "logoutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+				  Logout	<i class="button-right-icon material-icons">account_circle</i>
+				</button>
+		      </nav>
+	    </div>
+	  	</header>
+			<!-- This is the Navigation Bar -->
+  <div class="mdl-layout__drawer">
+	<button id="goHome" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+	Home
+	</button>
+	<br>
+	<button id="goReport" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Report
+	</button>
+	<br>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  View Sightings on Map
+	</button>
+	<br>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  View Sightings Data
+	</button>
+	</div>
+	<table class="mdl-data-table mdl-js-data-table">
+	  <thead>
+	    <tr>
+	      <th class="mdl-data-table__cell--non-numeric">Sighting Report</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td class="mdl-data-table__cell--non-numeric">Unique Key:</td>
+	      <td>
+				<form action="#">
+  				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <input class="mdl-textfield__input" type="text" id="uniqueKey">
+				    <label class="mdl-textfield__label" for="uniqueKey">Unique Key...</label>
+				  </div>
+				</form>
+			</td>
+	    </tr>
+	    <tr>
+	      <td class="mdl-data-table__cell--non-numeric"> Date of Sighting: </td>
+	      <td><form action="#">
+  				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				    <input class="mdl-textfield__input" type="date" id="reportDate">
+				  </div>
+				</form></td>
+	    </tr>
+	    <tr>
+	      <td class="mdl-data-table__cell--non-numeric">Location Type: </td>
+	      <td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" id="locationType">
+							<label class="mdl-textfield__label" for="locationType">Location Type...</label>
+						</div>
+					</form>
+				</td>
+	    </tr>
+			<tr>
+			 <td class="mdl-data-table__cell--non-numeric">Zip Code </td>
+			 <td>
+				 <form action="#">
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						 <input class="mdl-textfield__input" type="number" id="zipCode">
+						 <label class="mdl-textfield__label" for="zipCode">Zip code...</label>
+					 </div>
+				 </form>
+			 </td>
+		 </tr>
+		 <tr>
+			 <td class="mdl-data-table__cell--non-numeric">Address: </td>
+			 <td>
+				 <form action="#">
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						 <input class="mdl-textfield__input" type="text" id="address">
+						 <label class="mdl-textfield__label" for="address">Address...</label>
+					 </div>
+				 </form>
+			 </td>
+		 </tr>
+		 <tr>
+			 <td class="mdl-data-table__cell--non-numeric">City: </td>
+			 <td>
+				 <form action="#">
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						 <input class="mdl-textfield__input" type="text" id="city">
+						 <label class="mdl-textfield__label" for="city">City...</label>
+					 </div>
+				 </form>
+			 </td>
+		 </tr>
+		 <tr>
+			 <td class="mdl-data-table__cell--non-numeric">Latitude: </td>
+			 <td>
+				 <form action="#">
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						 <input class="mdl-textfield__input" type="number" id="latitude">
+						 <label class="mdl-textfield__label" for="latitude">Latitude...</label>
+					 </div>
+				 </form>
+			 </td>
+		 </tr>
+		 <tr>
+			 <td class="mdl-data-table__cell--non-numeric">Longitude: </td>
+			 <td>
+				 <form action="#">
+					 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						 <input class="mdl-textfield__input" type="longitude" id="longitude">
+						 <label class="mdl-textfield__label" for="longitude">Longitude...</label>
+					 </div>
+				 </form>
+			 </td>
+		 </tr>
+	  </tbody>
+		<tr>
+			<td><button id="reportSighting" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+		  Report Sighting
+		</button>
+	</td>
+</tr>
+	</table>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAxawGF_89JQNocS8FMTysYRjj9XyJlHoQ",
+    authDomain: "rattrackingapp.firebaseapp.com",
+    databaseURL: "https://rattrackingapp.firebaseio.com",
+    projectId: "rattrackingapp",
+    storageBucket: "rattrackingapp.appspot.com",
+    messagingSenderId: "953060175016"
+  };
+  firebase.initializeApp(config);
+
+
+
+</script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="attempt.js"></script>
+
+
+</body>
+</html>
